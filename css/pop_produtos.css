@@ -17,6 +17,8 @@ html body{
 .imgpop{
     width: 600px;
     text-align: center;
+    height: 400px;
+    object-fit: cover
 }
 
 .parpop{
