@@ -1,0 +1,143 @@
+/*Estilização padrão da página*/
+body{
+     margin: 0;
+     font-family: fantasy;
+     background: linear-gradient(   #ffffff,#ffffff,	#92ad5b, #526645);
+}
+    
+/*estilização do HEADER da página*/
+header{
+    background:linear-gradient(#526645,#92ad5b,#ffffff);
+    padding: 20px 0 40px 0;
+}
+
+.logo{
+    width: 5%;
+/*margin-left 10%*/
+    padding-left: 10%;
+}
+
+nav{
+    color: black;
+    position: absolute;
+    top: 25%;
+    font-size: 20;
+    right: 2%;
+    width: 30%;
+    font-family:cursive;
+}
+
+nav li{
+    display: inline;
+    margin-right: 6%;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.divHeader{
+    position: relative;
+}
+
+/*Título*/
+
+.produtos_titulo{
+    color: black;
+    font-size:30px;
+    font-family:cursive;
+    list-style: none;
+    text-align: center;
+}   
+
+/*Container dos cards*/
+
+.container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    gap: 100px;
+}
+
+/*Estilização do card*/
+
+.card{
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    font-family:cursive;
+
+
+}
+
+/*Efeito de ampliar*/
+
+.card:hover{
+    transform: scale(1.3);
+}
+
+/*Estilização da imagem do card*/
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Estilização do preço*/
+
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+/*FOOTER(rodapé)*/
+
+footer{
+    padding: 30px 10px 10px 0;  
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+}
+
+/*Parágrafo do rodapé*/
+
+footer p{
+    color: white;
+    text-align: right;
+    font-size:20px;
+    font-family:cursive;
+}
+    
+/*Link dos acessos*/    
+    
+footer a{
+    color:white;
+    text-decoration: none;
+
+}
+
+/*IMAGEM DO RODAPÉ*/
+
+.logo_rodape{
+    width: 8%;
+    padding-left: 89%;
+}
+
+/*Estilização da Data*/
+
+.data {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family:cursive;
+}

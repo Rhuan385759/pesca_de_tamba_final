@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../css/produtos.css">
+
+<!--javascript-->    
+    <script>
+        alert("Conheça Nossos produtos");
+
+        function abrirDetalhes(nome, imagem, descricao){
+
+            url=`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descricaoProduto=${encodeURIComponent(descricao)}`
+
+            window.open(url , "_blank" , "width = 800, height = 700")
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="divHeader">
+        <img src="../img/Imagem sem fundo.png" class="logo"/> 
+        <!--Barra de navegção-->
+         <nav>
+            <!--Lista de itens do menu-->
+              <ul>
+                 <li><a href="../index.html"> Ponto da Pesca</a></li>
+                 <li>Equipamentos & Dicas</li>
+                <li><a href="../paginas/contatos.html">Contatos</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header>
+    <!--Conteúdo da Pagina PRODUTOS-->
+        <main>
+              <ul class="produtos_titulo">
+                <li>Produtos</li>
+              </ul>
+              <!--Exibição de data-->
+              <p class ="data">
+                 <script type="text/javaScript">
+                    dia = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+                    
+                    mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+
+                     data = new Date
+                     document.write(dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                 </script>
+              </p>
+
+    <!--Exibição dos Produtos-->   
+              <div class="container">
+                <script>
+                    //Descrição do produto
+                    desc_produto=" Boias de pesca: mantêm a isca na profundidade certa e indicam a fisgada. Ideais para diferentes tipos de pesca, com modelos variados e práticos.";
+                    desc_produto2=" Massas de pesca: possuem diversos sabores e atrativos para a todos os tipos de peixes.";
+                    desc_produto3=" Varas de pesca: de diversos tamanhos e libragens, especéficas para cada modalidade na pescaria.";
+                    desc_produto4=" Molinetes: de diversos tamanhos e capacidades de linhas.";
+                    desc_produto5=" Carretilhas:  de diversos tamanhos e capacidades de linhas.";
+                    desc_produto6=" Camisetas de pesca: personalize sua camisete do seu jeito com seu nome e arte que quiser.";
+
+                    slider=['../img/produtos/boiacev-robusta-65g-41730.jpg','../img/produtos/torpedos.webp','../img/produtos/lambari.webp'];
+                    slider2=['../img/produtos/massas-japonesas-7586.jpg', '../img/produtos/4estacoes.webp' , '../img/produtos/marvada.webp' , '../img/produtos/ice.jpg'];
+                    slider3=['../img/produtos/images.jpg' , '../img/produtos/varacolorida.webp' , '../img/produtos/varavermelha.webp' , '../img/produtos/varatelescopica.webp'];
+                    slider4=['../img/produtos/images (1).jpg' , '../img/produtos/molinetegrande.webp' , '../img/produtos/molinetevermelho.webp' , '../img/produtos/molinetepequeno.webp'];
+                    slider5=['../img/produtos/354992.webp' , '../img/produtos/carretilhagrande.webp' , '../img/produtos/carretilha_amarela.webp' , '../img/produtos/carretilharobo.webp'];
+                    slider6=['../img/produtos/D_975890-MLB87627012111_072025-O.jpg' , '../img/produtos/camisetapers.webp' , '../img/produtos/camisetaroxa.webp' , '../img/produtos/camiseta_per2.webp'];
+                </script>
+                   <div class="card" onclick="abrirDetalhes('Boia de pesca' , slider , desc_produto)">
+                       <img src="../img/produtos/boiacev-robusta-65g-41730.jpg"/>
+                       <h2>Boia de Pesca</h2>
+                       <p>Boias Cevadeira, Boias Torpedo, Boias Lambari</p>
+                       <p class="preco"> R$ 20/cada</p>
+                   </div>
+                   <div class="card" onclick="abrirDetalhes('Massa de pesca' , slider2 , desc_produto2)">
+                       <img src="../img/produtos/massas-japonesas-7586.jpg"/>   
+                       <h2>Iscas</h2>
+                       <p>Massas de diversos sabores e atrativos</p>
+                       <p class="preco"> R$ 30/cada</p>
+                   </div>
+                   <div class="card" onclick="abrirDetalhes('Varas de Pesca' , slider3 , desc_produto3)">
+                       <img src="../img/produtos/images.jpg"/>
+                       <h2>Varas de Pesca</h2>
+                       <p>Varas de Carretilha e Molinete de diversos tamanhos</p>
+                       <p class="preco"> R$ 200/cada</p>
+                   </div>
+              </div>   
+
+              <div class="container">
+                   <div class="card" onclick="abrirDetalhes('Molinetes' , slider4 , desc_produto4)">
+                       <img src="../img/produtos/images (1).jpg" />
+                       <h2>Molinetes</h2>
+                       <p>Molinetes de diversas capcidades de linha</p>
+                       <p class="preco"> R$ 300/cada</p>
+                   </div>
+                   <div class="card" onclick="abrirDetalhes('Carretilhas' , slider5,  desc_produto5)">
+                       <img src="../img/produtos/354992.webp"/>
+                       <h2>Carretilhas</h2>
+                       <p>Carretilhas de diversas capcidades de linha</p>
+                       <p class="preco"> R$ 500/cada</p>
+                   </div>
+                   <div class="card" onclick="abrirDetalhes('Camisetas Personalizadas' , slider6 , desc_produto6)">
+                        <img src="../img/produtos/D_975890-MLB87627012111_072025-O.jpg" />
+                        <h2>Camisetas</h2>
+                        <p>Camisetas de pesca personalizada</p>
+                        <p class="preco"> R$ 100/cada</p>
+                   </div>
+
+             </div>
+        </main>
+        <footer>
+            <img src="../img/Imagem sem fundo.png" title="Dicas de Tambeiro" class="logo_rodape"/>
+            <p>
+                Encomendas on-line:
+                <a href="https://wa.me/5511963018262" target="_blank"><i class="fa fa-whatsapp" ></i>(11) 96301-8262 </a>/ 
+                <a href="https://instagram.com/garcabrancapescarestaurante" target="_blank"><i class="fa fa-instagram" ></i>@garcabrancapescarestaurante</a>
+            </p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/*Estilização padrão da página*/
+body{
+    margin: 0;
+    font-family: fantasy;
+    background: linear-gradient(   #ffffff,#ffffff,	#92ad5b, #526645);
+}
+   
+/*estilização do HEADER da página*/
+header{
+   background:linear-gradient(#526645,#92ad5b,#ffffff);
+   padding: 20px 0 40px 0;
+}
+
+.logo{
+   width: 5%;
+/*margin-left 10%*/
+   padding-left: 10%;
+}
+
+nav{
+   color: black;
+   position: absolute;
+   top: 25%;
+   font-size: 20;
+   right: 2%;
+   width: 30%;
+   font-family:cursive;
+}
+
+nav li{
+   display: inline;
+   margin-right: 6%;
+}
+
+nav li a{
+   color: black;
+   text-decoration: none;
+}
+
+.divHeader{
+   position: relative;
+}
+
+/*Título*/
+
+.contatos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(7B, B, 116);
+    font-family: cursive;
+    list-style: none;
+    text-align: center;
+}
+
+/*.contatos-item::before{
+    content:"";
+}*/
+
+.texto-contatos{
+    padding-left: 5%;
+    font-family:cursive;
+}
+
+/*Formulário*/
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+.chk{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    margin-bottom: 20%;
+    background: rgb(21, 75, 7);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(21, 75, 7);
+    transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+
+.divRetorno{
+    display: none;
+    margin-bottom: 15px;
+}
+
+.divRetorno p{
+    font-size: 24px;
+}
+
+/*FOOTER(rodapé)*/
+
+footer{
+    padding: 30px 10px 10px 0;  
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+ }
+
+/*Parágrafo do rodapé*/
+
+ footer p{
+   color: white;
+   text-align: right;
+   font-size:20px;
+   font-family:cursive;
+  }
+
+/*Link dos acessos*/    
+
+  footer a{
+   color:white;
+   text-decoration: none;
+
+  }
+
+
+/*IMAGEM DO RODAPÉ*/
+
+ .logo_rodape{
+     width: 10%;
+     padding-left: 89%;
+ }
