@@ -49,6 +49,7 @@ nav li a{
     font-family:cursive;
     list-style: none;
     text-align: center;
+    font-weight: bold;
 }   
 
 /*Container dos cards*/
